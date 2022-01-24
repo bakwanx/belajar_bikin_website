@@ -154,7 +154,7 @@ class Challenge{
     }
 }
 
-let challenge = Challenge();
+let challenge = new Challenge();
 //challenge 1
 let array1 = [2, 5, 10, "saya", 29, 99, 38];
 let array2 = [100, 3, 66, 20, "abjad"];
