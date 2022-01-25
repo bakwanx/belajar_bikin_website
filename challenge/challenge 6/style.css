@@ -1,0 +1,24 @@
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+}
+
+#box-1{
+    height: 200px;
+    width: 200px;
+    border-color: #000000;
+}

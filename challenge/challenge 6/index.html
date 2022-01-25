@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--section 1-->
+    <section class="section-1">
+        <div class="box-0" id="box-1">
+
+        </div>
+    </section>
+
+    <!--section 2-->
+    <section class="section-2">
+        <div class="box-1" style="margin-left: 200px;" id="box">
+
+        </div>
+        <div class="box-2" id="box">
+
+        </div>
+        <div class="box-3" style="margin-right: 200px;" id="box">
+
+        </div>
+    </section>
+
+    <!--section 3-->
+    <section class="section-2">
+        <div class="box-4" style="margin-left: 200px;" id="box">
+
+        </div>
+        <div class="box-5" id="box">
+
+        </div>
+        <div class="box-6" style="margin-right: 200px;" id="box">
+
+        </div>
+    </section>
+
+    <!--section 4-->
+    <section class="section-2">
+        <div class="box-7" style="margin-left: 200px;" id="box">
+
+        </div>
+        <div class="box-8" id="box">
+
+        </div>
+        <div class="box-9" style="margin-right: 200px;" id="box">
+
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="plugin/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        let color = ['#ffffff', '#eb4d4b', '#30336b', '#e056fd' ,'#D77FA1', '#BAABDA','#D6E5FA','#876445','#CA965C','#EEC373'];
+
+        for(let i = 0; i < color.length; i++) {
+            if(i == 0){
+                $(`.box-${i}`).css("background-color", color[0]);
+            }
+            $(`.box-${i}`).css("background-color", color[i]);
+            $(`.box-${i}`).on("click", function(){
+                $(`.box-0`).css("background-color", color[i]);
+            });
+        }
+        // for (let i = 0; i < box.length; i++) {
+        //     if(i == 0){
+        //         box.get(i).style.backgroundColor = color[i];
+        //         box.get(i).style.border = 'thick solid #000000';
+        //     }
+        //     box.get(i).style.backgroundColor = color[i];
+        //     box.get(i).click(function(){
+        //         alert( "Handler for .click() called." );
+        //     });
+        // }
+    });
+    
+
+</script>
+</html>

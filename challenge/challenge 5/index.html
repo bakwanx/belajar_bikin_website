@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--section 1-->
+    <section class="section-1">
+        <div class="box">
+
+        </div>
+    </section>
+
+    <!--section 2-->
+    <section class="section-2">
+        <div class="box" style="margin-left: 200px;">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box" style="margin-right: 200px;">
+
+        </div>
+    </section>
+
+    <!--section 3-->
+    <section class="section-2">
+        <div class="box" style="margin-left: 200px;">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box" style="margin-right: 200px;">
+
+        </div>
+    </section>
+
+    <!--section 4-->
+    <section class="section-2">
+        <div class="box" style="margin-left: 200px;">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box" style="margin-right: 200px;">
+
+        </div>
+    </section>
+
+</body>
+<script>
+
+    let color = ['#ffffff', '#eb4d4b', '#30336b', '#e056fd' ,'#D77FA1', '#BAABDA','#D6E5FA','#876445','#CA965C','#EEC373'];
+    let box = document.getElementsByClassName('box');
+    console.log(box.length);
+    for(let i=0; i<box.length; i++){
+        if(i == 0){
+            box.item(i).style.backgroundColor = color[i];
+            box.item(i).style.border = 'thick solid #000000';
+        }
+        box.item(i).style.backgroundColor = color[i];
+        box[i].addEventListener("click", function(){
+            box.item(0).style.backgroundColor = color[i];
+        });
+    }
+    
+
+</script>
+</html>
